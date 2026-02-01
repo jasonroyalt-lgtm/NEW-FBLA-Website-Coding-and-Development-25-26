@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "msedge",
+            "type": "pwa-chrome",
             "request": "launch",
             "name": "Open index.html",
             "file": "c:\\Users\\jason\\.vscode\\NEW-FBLA-Website-Coding-and-Development-25-26\\index.html"
