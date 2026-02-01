@@ -6,14 +6,17 @@ p {
 h1 {
     font-family: "Poppins", sans-serif;
     margin-bottom: 30px;
-    color: blue;
     font-weight: 700;
 }
+
+h3 {
+    font-size
+}
+
 
 h4 {
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: blue;
     font-weight: 700;
 }
 
@@ -111,6 +114,33 @@ footer {
     text-align: center;
 }
 
+.report-header {
+    text-align: center;
+    color:#2c35c9
+}
 
+.customer-review {
+    text-spacing-trim: space-all;
+    padding-right: 80px;
+    padding-left: 80px;
+    color: #2c35c9;
+}
+
+form {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 50px;
+    color: #2c35c9;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+#image-submission::file-selector-button {
+    color: #2c35c9;
+    background-color: white;
+}
+
+#item-description {
+
+}
 
 
