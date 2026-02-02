@@ -1,5 +1,7 @@
 <!DOCTYPE HTML>
 <html>
+    <!--Head of website which includes title of each page  of website, a link to the CSS stylesheet, a link to bootstrap 4.5.2 to make
+    the website functional as the screen size shrinks marginally, and a link to the Poppins font used throughout the website.-->
     <head>
         <title>/Report Item</title>
         <link rel = "stylesheet" type = "text/css" href = "style.css">
@@ -8,30 +10,40 @@
     </head>    
 
     <body>
+        <!--Navigational bar containing a link to all other pages on the website, as well as an option for administrators
+        to log in or sign up to the backend system.-->
         <ul class = nav>
             <li class = "nav-item"><a href ="index.html">FMHS LOCATE</a></li>
             <li class = "nav-item"><a href = "index.html">Home</a></li>
             <li class = "nav-item"><a href = "about.html">About Us</a></li>
             <li class = "nav-item"><a href = "report-item.html">Report Item</a></li>
             <li  class = "nav-item"><a href = "search-item.html">Search Item</a></li>
+            <li  class = "nav-item"><a href = ""><a href="signup.html">Sign up</a></li>
+            <li  class = "nav-item"><a href = ""><a href="login.html">Log in</a></li> 
         </ul>
 
+        <!--Header for item report form-->
         <div class="report-header">
             <h1><b>Got an item to report?</b></h1>
             <h4 >Fill out this short form, and let our admin take care of the rest!</h4>
         </div>    
 
-        <form action="database.sql">
+        <!--Form to report a lost item, asks user for their first & last name, their distriict-issued email, and asks the user
+        to submit a file-->
+        <form class="report-form" action="t.js" method="post">
             <label for="fname">First name:</label><br>
             <input type="text" id="fname"><br>
             <label for="lname">Last name:</label><br>
             <input type="text" id="lname"><br>
-            <br><input type="file" id="image-submission">
-            <label for="message">Enter a brief description:</label>
-            <textarea id="item=description" name="message" rows="5" cols="30"></textarea>
-            <br><input type="submit" value="Submit"><br>
+            <br><label for="image-submission">Picture of lost item:</label><br>
+            <input type="file" id="image-submission"><br>
+            <br><label for="message">Enter a brief description:</label><br>
+            <textarea id="item=description" name="message" rows="5" cols="30"></textarea><br>
+            <br><input type="submit" id="submit-button" value="Submit"><br>
         </form> 
 
+        <!--Footer which includes links to other pages of the website, as well as a phone number, social media, and an address
+        to contact the school. The footer also lists us three developers under the about us column.-->
         <footer>
             <div class="column">
                 <h3><a href="about.html">About Us</a></h3>

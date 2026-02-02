@@ -1,28 +1,28 @@
 p {
     font-size: 18px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 h1 {
     font-family: "Poppins", sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     font-weight: 700;
 }
 
 h3 {
-    font-size
+    font-size: 35px;
 }
 
 
 h4 {
     font-size: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
 }
 
 h6 {
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 li {
@@ -31,6 +31,7 @@ li {
 }
 
 .motto {
+    text-align: center;
     color: white;
     font-size: 65px;
     padding-top: 20px;
@@ -38,9 +39,16 @@ li {
     padding-right: 20px;
 }
 
+.home-description {
+    color: white;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 #gradient {
     background: linear-gradient(150deg, #2c35c9,#4b50be, #ffffff);
-    height: 600px;
+    height: 400px;
     width: 100%;
 }
 
@@ -77,7 +85,7 @@ a:hover {
 .schoolBG {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 1000px;
     filter: opacity(80%);
 }
 
@@ -87,15 +95,19 @@ a:hover {
     left: 55%;
     background-color: white;
     width: 45%;
-    height: 600px;
+    height: 1000px;
     color: #2c35c9;
     text-align: center;
+    padding-top: 150px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .section {
-    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
     background-color: #2c35c9;
     color: white;
     text-align:center;
@@ -105,6 +117,7 @@ footer {
     background-color: #2c35c9;
     height: 250px;
     color: white;
+    text-align: center;
 }
 
 .column {
@@ -120,14 +133,15 @@ footer {
 }
 
 .customer-review {
-    text-spacing-trim: space-all;
-    padding-right: 80px;
-    padding-left: 80px;
+    line-height: 2em;
+    padding-right: 150px;
+    padding-left: 150px;
+    padding-bottom: 150px;
     color: #2c35c9;
 }
 
 form {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Poppins", sans-serif;
     padding-left: 50px;
     color: #2c35c9;
     font-size: 20px;
@@ -139,8 +153,37 @@ form {
     background-color: white;
 }
 
-#item-description {
-
+#submit-button {
+    color: #2c35c9;
+    background-color: white;
 }
+
+.account-form {
+    padding-top: 150px;
+    text-align: center;
+    color: #2c35c9;
+}
+
+.search{
+    text-align: center;
+    color: #2c35c9;
+    padding-bottom: 50px;
+}
+
+#search-bar {
+    width: 80%;
+}
+
+.backend-home {
+    text-align: center;
+    background-color: #2c35c9;
+    color: white;
+    padding-bottom: 50px;
+}
+
+
+
+
+
 
 

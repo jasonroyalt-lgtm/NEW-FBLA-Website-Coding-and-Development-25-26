@@ -1,5 +1,7 @@
 <!DOCTYPE HTML>
 <html>
+    <!--Head of website which includes title of each page  of website, a link to the CSS stylesheet, a link to bootstrap 4.5.2 to make
+    the website functional as the screen size shrinks marginally, and a link to the Poppins font used throughout the website.-->
     <head>
         <title>FMHS LOCATE </title>
         <link rel = "stylesheet" type = "text/css" href = "style.css">
@@ -9,29 +11,41 @@
     </head>    
 
     <body>
+        <!--Navigational bar containing a link to all other pages on the website, as well as an option for administrators
+        to log in or sign up to the backend system.-->
         <ul class = nav>
             <li class = "nav-item"><a href ="index.html">FMHS LOCATE</a></li>
             <li class = "nav-item"><a href = "index.html">Home</a></li>
             <li class = "nav-item"><a href = "about.html">About Us</a></li>
             <li class = "nav-item"><a href = "report-item.html">Report Item</a></li>
-            <li  class = "nav-item"><a href = "search-item.html">Search Item</a></li>  
-        </ul>    
+            <li  class = "nav-item"><a href = "search-item.html">Search Item</a></li>
+            <li  class = "nav-item"><a href = ""><a href="signup.html">Sign up</a></li>
+            <li  class = "nav-item"><a href = ""><a href="login.html">Log in</a></li>  
+        </ul>   
+        
+        <!--Main feature of website home page, gradient and large text hooks user into website. A brief description of LOCATE
+        is included, as well as two call to action buttons to report or search for an item.-->
         <div id = "gradient">
             <h1 class="motto"><b>Lost and found, made simple.</b></h1>
+            <h4 class="home-description">Our smart <em>and</em> safe item tracking system lets you rest easy, and allows you to focus on what makes
+            Fruita Monument special!</h4>
         </div>
 
+        <!--Fabricated customer review to establish ethos/reliability of website for user.-->
         <div class="customer-review">
             <h1 style="text-align: center;"><b>See what our customers think<b></h1>
-            <h4>I lost my water bottle about a week ago, and LOCATE was the perfect way to find it!
+            <h6>I lost my water bottle about a week ago, and LOCATE was the perfect way to find it!
                 The design of the website was extremely welcoming, and it was amazing that everything 
                 was within just a few clicks! It was clear that the admin were very comfortable with
                 the website, and the conversation with them made it super simple to get my water
                 bottle back. Based on my experience, LOCATE is the perfect tool for any school 
                 looking to declutter their lost and found!
-            </h4>
+            </h6>
             <h4>-Anonymous</h4>
         </div>    
 
+        <!--Footer which includes links to other pages of the website, as well as a phone number, social media, and an address
+        to contact the school. The footer also lists us three developers under the about us column.-->
         <footer>
             <div class="column">
                 <h3><a href="about.html">About Us</a></h3>

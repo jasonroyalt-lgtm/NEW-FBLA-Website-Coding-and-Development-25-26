@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <!--Head of website which includes title of each page  of website, a link to the CSS stylesheet, a link to bootstrap 4.5.2 to make
+        the website functional as the screen size shrinks marginally, and a link to the Poppins font used throughout the website.-->
         <title>About Us</title>
         <link rel = "stylesheet" type = "text/css" href = "style.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
@@ -8,16 +10,23 @@
     </head>    
 
     <body>
+        <!--Navigational bar containing a link to all other pages on the website, as well as an option for administrators
+        to log in or sign up to the backend system.-->
         <ul class = nav>
             <li class = "nav-item"><a href ="index.html">FMHS LOCATE</a></li>
             <li class = "nav-item"><a href = "index.html">Home</a></li>
             <li class = "nav-item"><a href = "about.html">About Us</a></li>
             <li class = "nav-item"><a href = "report-item.html">Report Item</a></li>
-            <li class = "nav-item"><a href = "search-item.html">Search Item</a></li>   
+            <li class = "nav-item"><a href = "search-item.html">Search Item</a></li>
+            <li  class = "nav-item"><a href = ""><a href="signup.html">Sign up</a></li>
+            <li  class = "nav-item"><a href = ""><a href="login.html">Log in</a></li>    
         </ul>
+
+        <!--Includes an image of the school behind a text box, which has a paragraph description of the school's history and missions.
+        This gives the idea that the website was built by and specifically for the school.-->
         <img class = "schoolBG" src="https://images.squarespace-cdn.com/content/v1/5f720bc1818d0b5e5c0144f6/4a8cd09c-7cc5-48f8-9fb4-f72dfe6187c4/Fuita+Monument+High+Full+Twilight.jpg?format=750w">
         <div id = "our-story">
-            <h1>FMHS History</h1>
+            <h1><b>FMHS History</b></h1>
             <p>
                 At Fruita Monument High school, we have provided a top quality, one-of-a-kind education since our founding in 1905.
                 We aim to cultivate innovation, achievement, and passion through a learner-centered environment. With a district-high
@@ -26,36 +35,66 @@
                 graduation rate. All of this to say: It's great to be a Fruita Monument Wildcat!
             </p>    
         </div>
+
+        <!--Contains a brief paragraph description about LOCATE, as well as why it was created.-->
         <div class="section">
             <h1>About LOCATE</h1>
             <p>
-
+                Where nearly 1700 students and staff at Fruita Monument High School saw piles of lost clothes and belongings,
+                we at LOCATE saw an opportunity. Understanding the awkwardness of scowering through others' lost items, we wanted to
+                create a solution that was not only easy on school administrators, but that also minimized the need to search the 
+                whole school--or even through other people's stuff--to find what you lost. Through this, FMHS LOCATE was born. Our
+                searchable listing and item claiming system save students valuable time and energy, and allow them to focus on the 
+                busy lives and involvement in everything that makes Fruita Monument what it is.
             </p>
         </div>  
 
+        <!--Includes 10 frequently asked questions, as well as short, 1-2 sentence responses to each of them.-->
         <div class = section>
             <h1><b>Frequently Asked Questions</b></h1>
-            <h4>1. (question)</h4>
-            <p>(answer)</p>
-            <h4>2. (question)</h4>
-            <p>(answer)</p>
-            <h4>3. (question)</h4>
-            <p>(answer)</p>
-            <h4>4. (question)</h4>
-            <p>(answer)</p>
-            <h4>5. (question)</h4>
-            <p>(answer)</p>
-            <h4>6. (question)</h4>
-            <p>(answer)</p>
-            <h4>7. (question)</h4>
-            <p>(answer)</p>
-            <h4>8. (question)</h4>
-            <p>(answer)</p>
-            <h4>9. (question)</h4>
-            <p>(answer)</p>
-            <h4>10. (question)</h4>
-            <p>(answer)</p>
+
+            <h4>1. How do I claim an item?</h4>
+            <p>It's simple--go to the "search item" page, and when you find an item that you have lost, click on the "claim item"
+                button below it. You will fill out a short form, and that's all you need to do!
+            </p><br>
+
+            <h4>2. What information do I have to provide to claim an item?</h4>
+            <p>Only 2 things: your first & last name, and your District 51 email.</p><br>
+
+            <h4>3. Can I edit an item report that I filled out, after it has been approved?</h4>
+            <p>Unfortunately, no. You are unable to change an item report once you have filled out the form, so
+                be careful with what you put in the description!
+            </p><br>
+
+            <h4>4. How can I be sure that someone else doesn't claim my item?</h4>
+            <p>Our school admin are extremly careful about this. Not only do we have the item claim form in place
+                for this exact reason, but staff familiar with LOCATE will also make sure to ask questions about the item, to ensure
+                that the item doesn't fall into the wrong hands.
+            </p><br>
+
+            <h4>5. I have filled out the form to report an item. What now?</h4>
+            <p>Once your report has been approved, take the item to the lost and found, and let admin take care of the rest!</p><br>
+
+            <h4>6. How do I claim in person once I have claimed it on the website?</h4>
+            <p>Once your claim has been approved by admin, show up to the lost and found, give them
+                your school ID as confirmation of your claim on the website, and you'll have  your item back!
+            </p><br>
+
+            <h4>7. How long before items are donated or given away?</h4>
+            <p>We offload items at the end of each semester, so make sure to pick up items before then!</p><br>
+
+            <h4>8. How can I know if an item I lost was found?</h4>
+            <p>Make sure to check here on the website every day, to see if your item is currently in the lost and found!
+            </p><br>
+
+            <h4>9. How will I know when my item report was approved?</h4>
+            <p>If you check again on the website at some point later during the day, you should be able
+                to see the item your reported if your report was approved.
+            </p>
         </div>
+
+        <!--Footer which includes links to other pages of the website, as well as a phone number, social media, and an address
+        to contact the school. The footer also lists us three developers under the about us column.-->
         <footer>
             <div class="column">
                 <h3><a href="about.html">About Us</a></h3>

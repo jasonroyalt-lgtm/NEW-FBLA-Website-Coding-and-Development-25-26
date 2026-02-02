@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <!--Head of website which includes title of each page  of website, a link to the CSS stylesheet, a link to bootstrap 4.5.2 to make
+    the website functional as the screen size shrinks marginally, and a link to the Poppins font used throughout the website.-->
+    <head>
+        <title>FMHS LOCATE </title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    </head>
+
+    <body>
+        <!--Navigational bar containing a link to all other pages on the website, as well as an option for administrators
+        to log in or sign up to the backend system.-->
+        <ul class = nav>
+            <li class = "nav-item"><a href ="index.html">FMHS LOCATE</a></li>
+            <li class = "nav-item"><a href = "index.html">Home</a></li>
+            <li class = "nav-item"><a href = "about.html">About Us</a></li>
+            <li class = "nav-item"><a href = "report-item.html">Report Item</a></li>
+            <li  class = "nav-item"><a href = "search-item.html">Search Item</a></li>  
+        </ul>
+
+        <form class="account-form" action="admin-backend.html">
+            <b>
+            <label for="username">Username: </label><br>
+            <input type="text" id="username"><br>
+            <label for="password">Password: </label> <br> 
+            <input type="password" id="password"><br>
+            <br><input type="submit" id="submit-button" value="Submit">
+            </b>
+        </form>
+
+    </body> 
+
+</html>
