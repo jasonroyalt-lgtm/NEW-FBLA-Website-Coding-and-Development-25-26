@@ -1,6 +1,7 @@
 p {
     font-size: 18px;
     font-family: "Poppins", sans-serif;
+    line-height: 40px;
 }
 
 h1 {
@@ -148,6 +149,11 @@ form {
     padding-bottom: 50px;
 }
 
+.report-form {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
 #image-submission::file-selector-button {
     color: #2c35c9;
     background-color: white;
@@ -179,6 +185,7 @@ form {
     background-color: #2c35c9;
     color: white;
     padding-bottom: 50px;
+    height: 800px;
 }
 
 
