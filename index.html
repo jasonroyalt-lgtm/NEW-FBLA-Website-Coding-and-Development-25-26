@@ -11,6 +11,11 @@
     </head>    
 
     <body>
+
+        <script type="module">
+            const response = await fetch('http://localhost:3000/api/items');
+        </script> 
+
         <!--Navigational bar containing a link to all other pages on the website, as well as an option for administrators
         to log in or sign up to the backend system.-->
         <ul class = nav>
@@ -65,10 +70,6 @@
                 <h6>Instagram: @Fruitamonumenthigh</h6>
                 <h6>Facebook: @FruitaMonumentHigh</h6>
             </div>   
-        </footer>
-
-        <script>
-            const response = await fetch('http://localhost:3000/api/items');
-        </script>               
+        </footer>              
     </body>    
 </html>        
