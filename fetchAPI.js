@@ -6,46 +6,59 @@ const API = `${window.location.protocol}//localhost:3000/api`;
 async function fetchAllItems() {
     try {
         const response = await fetch(`${API}/items`);
+
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
         const items = await response.json();
-        console.log('All items:', items);
+
+        console.log("All items:", items);
+
         return items;
     } catch (error) {
-        console.error('Error fetching all items:', error);
+        console.error("Error fetching all items:", error);
     }
 }
 
 // Fetch a single item by ID
 async function fetchItemById(itemId) {
     try {
-        const response = await fetch(`${API}/items/${itemId}`);
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        const response = await fetch("${API}/items/${itemId}");
+
+        if (!response.ok) throw new Error("Status: ${response.status}");
+
         const item = await response.json();
-        console.log('Item:', item);
+
+        console.log("Item:", item);
+
         return item;
     } catch (error) {
-        console.error('Error fetching item:', error);
+        console.error("Error fetching item:", error);
     }
 }
 
 // Create a new item
-async function createItem(itemData) {
+async function createItem(itemDesc) {
     try {
         const response = await fetch(`${API}/items`, {
-            method: 'POST',
+            method: "POST",
             headers: {
-                'Content-Type': 'application/json',
+                "Content-Type": "application/json",
             },
-            body: JSON.stringify(itemData)
+            body: JSON.stringify(itemDesc)
         });
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
         const newItem = await response.json();
-        console.log('Item created:', newItem);
-        alert('Item created successfully!');
+
+        console.log("Item created:", newItem);
+
+        alert("Item created successfully!");
+
         return newItem;
+
     } catch (error) {
-        console.error('Error creating item:', error);
-        alert('Error creating item');
+        console.error("Error creating item:", error);
+        alert("Error creating item");
     }
 }
 
@@ -53,14 +66,19 @@ async function createItem(itemData) {
 async function deleteItem(itemId) {
     try {
         const response = await fetch(`${API}/items/${itemId}`, {
-            method: 'DELETE'
+            method: "DELETE"
         });
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        console.log('Item claimed successfully');
-        alert('Item claim successfully!');
+
+        console.log("Item claimed successfully");
+
+        alert("Item claim successfully!");
+
     } catch (error) {
-        console.error('Error deleting item:', error);
-        alert('Error deleting item');
+
+        console.error("Error deleting item:", error);
+
+        alert("Error deleting item");
     }
 }
 
@@ -69,20 +87,29 @@ function setupEventListeners() {
     // Fetch all items button
     const fetchButton = document.getElementById("fetchAll");
     if (fetchButton) {
+
         fetchButton.addEventListener("click", async function() {
+
             await fetchAllItems();
         });
     }
 
     // Get single item button
-    const getItemButton = document.getElementById('getItemButton');
+    const getItemButton = document.getElementById("getItemButton");
+
     if (getItemButton) {
-        getItemButton.addEventListener('click', async function() {
+
+        getItemButton.addEventListener("click", async function() {
+
             const itemId = document.getElementById("itemIdInput").value;
+
             if (itemId) {
+
                 await fetchItemById(itemId);
+
             } else {
-                alert('Please enter an item ID');
+
+                alert("Please enter an item ID");
             }
         });
     }
@@ -93,12 +120,12 @@ function setupEventListeners() {
         createFormElement.addEventListener("submit", async function(event) {
             event.preventDefault();
             
-            const firstName = document.getElementById("fname").value;
-            const lastName = document.getElementById("lname").value;
+            const fname = document.getElementById("fname").value;
+            const lname = document.getElementById("lname").value;
             const item = document.getElementById("item").value;
             const itemDesc = document.getElementById("itemDesc").value;
 
-            await createItem({firstName, lastName, item, itemDesc});
+            await createItem({fname, lname, item, itemDesc});
             createFormElement.reset();
         });
     }
@@ -118,4 +145,4 @@ function setupEventListeners() {
 }
 
 // Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', setupEventListeners);
+document.addEventListener("DOMContentLoaded", setupEventListeners);
