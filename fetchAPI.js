@@ -21,10 +21,12 @@ function createForm(POST) {
     createForm.addEventListener("submit", async function(event) {
     event.preventDefault();  // stops page from reloading
   
-    const name = document.getElementById("nameInput").value;
-    const description = document.getElementById("descInput").value;
-  
-    await createItem({name, description});  // passes form data to fetch function
+    const firstName = document.getElementById("fname").value;
+    const lastName = document.getElementById("lname").value;
+    const item = document.getElementById("item").value;
+    const itemDesc = document.getElementById("itemDesc").value;
+
+    await createItem({firstName, lastName, item, itemDesc});  // passes form data to fetch function
     createForm.reset();  // clears the form
     });
 };
