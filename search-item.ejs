@@ -17,7 +17,7 @@
             <li class = "nav-item"><a href = "index.html">Home</a></li>
             <li class = "nav-item"><a href = "about.html">About Us</a></li>
             <li class = "nav-item"><a href = "report-item.html">Report Item</a></li>
-            <li  class = "nav-item"><a href = "search-item.html">Search Item</a></li>
+            <li  class = "nav-item"><a href = "search-item.ejs">Search Item</a></li>
             <li  class = "nav-item"><a href = ""><a href="signup.html">Sign up</a></li>
             <li  class = "nav-item"><a href = ""><a href="login.html">Log in</a></li>   
         </ul>
@@ -26,6 +26,20 @@
             <h1><b>Item search</b></h1>
             <input type="search" placeholder="Search for item" id="search-bar">
         </div>
+
+        <div class="item-container">
+            <% itemList.forEach(item => { %>
+                <div class="item-card">
+                    <h3><%= item.item %></h3>
+                    <h6>
+                        Submitted by: <%= item.fname %> <%= item.lname %>
+                    </h6>
+
+                    <p><%= item.itemdesc %></p>
+                </div>           
+            <% }) %>
+              
+        </div>    
 
         <!--Footer which includes links to other pages of the website, as well as a phone number, social media, and an address
         to contact the school. The footer also lists us three developers under the about us column.-->
@@ -49,5 +63,6 @@
                 <h6>Facebook: @FruitaMonumentHigh</h6>
             </div>   
         </footer>   
+        <script src="fetchAPI.js"></script> 
     </body>        
 </html>
