@@ -1,7 +1,4 @@
 /*
-
-Connect Event Listeners to the forms and buttons
-Connect Event Listeners to the DOM for manipulation
 Update the HTML to display the data returned from backend
 
 Use the backend and frontend to create a working search bar

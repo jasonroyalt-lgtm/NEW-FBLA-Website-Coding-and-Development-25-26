@@ -27,6 +27,7 @@
             <input type="search" placeholder="Search for item" id="search-bar">
         </div>
 
+
         <div class="item-container">
             <% itemList.forEach(item => { %>
                 <div class="item-card">
@@ -35,10 +36,9 @@
                         Submitted by: <%= item.fname %> <%= item.lname %>
                     </h6>
 
-                    <p><%= item.itemdesc %></p>
+                    <p><%= item.itemDesc %></p>
                 </div>           
             <% }) %>
-              
         </div>    
 
         <!--Footer which includes links to other pages of the website, as well as a phone number, social media, and an address
@@ -64,5 +64,5 @@
             </div>   
         </footer>   
         <script src="fetchAPI.js"></script> 
-    </body>        
+    </body>
 </html>

@@ -22,7 +22,7 @@ async function fetchAllItems() {
 // Fetch a single item by ID
 async function fetchItemById(itemId) {
     try {
-        const response = await fetch("${API}/items/${itemId}");
+        const response = await fetch('${API}/items/${itemId}');
 
         if (!response.ok) throw new Error("Status: ${response.status}");
 
@@ -61,6 +61,33 @@ async function createItem(itemDesc) {
         alert("Error creating item");
     }
 }
+
+// Fetch and display all items
+async function fetchItems() {
+    try {
+        const response = await fetch('http://localhost:3000/api/items');
+        const itemList = await response.json();
+        
+        // Render items on the page
+        const container = document.getElementById('item-container');
+        container.innerHTML = '';
+        
+        itemList.forEach(item => {
+            const div = document.createElement('div');
+            div.innerHTML = `
+                <h3>${item.item}</h3>
+                <h6>Submitted by: ${item.fname} ${item.lname}</h6>
+                <p>${item.itemdesc}</p>
+            `;
+            container.appendChild(div);
+        });
+    } catch (err) {
+        console.error('Error fetching items:', err);
+    }
+}
+
+// Load items when page loads
+fetchItems();
 
 // Delete an item by ID
 async function deleteItem(itemId) {
@@ -144,5 +171,27 @@ function setupEventListeners() {
     }
 }
 
+async function fetchFromDB(){
+    // Fetch data from your backend
+fetch(API)
+    .then(res => res.json())  // Parse JSON response
+    .then(itemList => {
+        // itemList is now an array of items
+        const container = document.getElementById('item-container');
+        
+        // Loop through each item and create HTML
+        itemList.forEach(item => {
+            const itemCard = document.createElement('div');
+            itemCard.className = 'item-card';
+            itemCard.innerHTML = `
+                <h3>${item.item}</h3>
+                <h6>Submitted by: ${item.fname} ${item.lname}</h6>
+                <p>${item.itemdesc}</p>
+            `;
+            container.appendChild(itemCard);
+        });
+    })
+    .catch(err => console.error('Error:', err));
+}
 // Initialize when DOM is loaded
 document.addEventListener("DOMContentLoaded", setupEventListeners);
