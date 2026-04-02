@@ -75,10 +75,10 @@ async function fetchItems() {
         itemList.forEach(item => {
             const div = document.createElement('div');
             div.innerHTML = `
-                <h3>${item.item}</h3>
-                <h6>Submitted by: ${item.fname} ${item.lname}</h6>
-                <p>${item.itemdesc}</p>
-            `;
+                <h3>${item}</h3>
+                <h6>Submitted by: ${fname} ${lname}</h6>
+                <p>${itemDesc}</p>
+            `
             container.appendChild(div);
         });
     } catch (err) {
